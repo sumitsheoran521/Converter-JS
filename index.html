@@ -9,34 +9,38 @@
   </head>
   <body>
     <div class="wrapper">
-        <div class="inputs">
-            <div class="w-100">
-                <select id="from" class="input-field">
-                    <option value="2">Binary</option>
-                    <option value="8">Octal</option>
-                    <option value="10">Decimal</option>
-                    <option value="16">HexaDecimal</option>
-                </select>
-            </div>
-            <div class="w-100">
-                <select id="to" class="input-field">
-                    <option value="2">Binary</option>
-                    <option value="8">Octal</option>
-                    <option value="10">Decimal</option>
-                    <option value="16">HexaDecimal</option>
-                </select>
-            </div>
+      <div class="inputs">
+        <div class="w-100">
+          <select id="from" class="input-field">
+            <option value="2">Binary</option>
+            <option value="8">Octal</option>
+            <option value="10">Decimal</option>
+            <option value="16">HexaDecimal</option>
+          </select>
         </div>
         <div class="w-100">
-          <input id="input-number" type="text" placeholder="Enter your number" class="input-field" style="width: 30%">
+          <select id="to" class="input-field">
+            <option value="2">Binary</option>
+            <option value="8">Octal</option>
+            <option value="10">Decimal</option>
+            <option value="16">HexaDecimal</option>
+          </select>
         </div>
-        <div style="margin-top: 40px;">
-          <button id="convert">Convert</button>
-          <button id="swap">Swap</button>
-        </div>
-        <div id="result-box">
-
-        </div>
+      </div>
+      <div class="w-100">
+        <input
+          id="input-number"
+          type="text"
+          placeholder="Enter your number"
+          class="input-field"
+          style="width: 30%"
+        />
+      </div>
+      <div style="margin-top: 40px">
+        <button id="convert">Convert</button>
+        <button id="swap">Swap</button>
+      </div>
+      <div id="result-box"></div>
     </div>
     <script src="./script.js" />
   </body>
